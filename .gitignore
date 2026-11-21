@@ -1,0 +1,22 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# IDE
+.vscode/
+
+# Large datasets and models
+data/*.pdf
+database/*.index
+database/*.json
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,260 @@
+
+/* =========================================
+   NUTRIBOT - PREMIUM FRONTEND THEME
+   ========================================= */
+
+:root {
+    --bg: #07110d;
+    --sidebar: #0d2118;
+    --panel: #0b1913;
+    --surface: #101f19;
+    --surface-light: #172b22;
+    --green: #10b981;
+    --green-dark: #059669;
+    --green-light: #a7f3d0;
+    --border: #244b38;
+    --text: #ecfdf5;
+    --muted: #9caeaa;
+}
+
+/* Main background */
+
+body,
+.gradio-container {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+}
+
+.gradio-container {
+    max-width: 1600px !important;
+    margin: auto !important;
+}
+
+/* Main layout */
+
+#sidebar {
+    background: linear-gradient(180deg, #10271c, #0b1c14) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 20px !important;
+    padding: 22px !important;
+    min-height: 850px;
+}
+
+#main-panel {
+    background: var(--panel) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 20px !important;
+    padding: 26px !important;
+}
+
+/* Branding */
+
+#brand {
+    color: var(--green-light) !important;
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    text-align: center !important;
+    letter-spacing: -1px;
+}
+
+#tagline {
+    color: var(--muted) !important;
+    text-align: center !important;
+    font-size: 13px !important;
+    letter-spacing: 1px;
+}
+
+/* Headings */
+
+h1, h2, h3 {
+    color: var(--text) !important;
+    font-weight: 750 !important;
+}
+
+.section-heading {
+    color: var(--green-light) !important;
+    font-weight: 700 !important;
+}
+
+/* Chat window */
+
+#chatbot {
+    border: 1px solid var(--border) !important;
+    border-radius: 18px !important;
+    background: #0f192a !important;
+    overflow: hidden !important;
+}
+
+/* Chat message text */
+
+#chatbot .message {
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+}
+
+/* User and assistant message bubbles */
+
+#chatbot .message.user {
+    border-radius: 15px !important;
+}
+
+#chatbot .message.bot {
+    border-radius: 15px !important;
+}
+
+/* Input area */
+
+#question-box textarea {
+    background: #10271c !important;
+    border: 1px solid #286447 !important;
+    border-radius: 13px !important;
+    color: var(--text) !important;
+    font-size: 15px !important;
+    padding: 15px !important;
+}
+
+#question-box textarea:focus {
+    border-color: var(--green) !important;
+    box-shadow: 0 0 0 2px #10b98130 !important;
+}
+
+/* All buttons */
+
+.primary-btn,
+button.primary {
+    background: var(--green-dark) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    font-weight: 750 !important;
+    transition: 0.2s ease !important;
+}
+
+.primary-btn:hover,
+button.primary:hover {
+    background: var(--green) !important;
+    transform: translateY(-1px);
+}
+
+.secondary-btn {
+    background: #172b22 !important;
+    border: 1px solid var(--border) !important;
+    color: var(--green-light) !important;
+    border-radius: 11px !important;
+    font-weight: 600 !important;
+}
+
+.secondary-btn:hover {
+    background: #214331 !important;
+}
+
+/* New chat button */
+
+#sidebar button.primary {
+    min-height: 45px !important;
+    font-size: 15px !important;
+}
+
+/* Suggested questions */
+
+.suggestion-btn {
+    background: #10271c !important;
+    border: 1px solid var(--border) !important;
+    color: var(--green-light) !important;
+    border-radius: 12px !important;
+    text-align: left !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+}
+
+.suggestion-btn:hover {
+    background: #16452f !important;
+    border-color: var(--green) !important;
+    transform: translateX(3px);
+}
+
+/* Chat history */
+
+#history-list {
+    background: #10271c !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+}
+
+/* Accordions */
+
+.gradio-container .accordion {
+    background: #102219 !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    margin-top: 12px !important;
+}
+
+.gradio-container .accordion:hover {
+    border-color: var(--green) !important;
+}
+
+/* Sources panel */
+
+#sources-panel {
+    background: #10271c !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    line-height: 1.8 !important;
+}
+
+/* Textboxes and dropdowns */
+
+.gradio-container input,
+.gradio-container textarea {
+    color: var(--text) !important;
+}
+
+/* Scrollbars */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #28533e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--green);
+}
+
+/* Footer */
+
+#footer {
+    color: var(--muted) !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    padding-top: 15px !important;
+}
+
+/* Responsive layout */
+
+@media screen and (max-width: 900px) {
+    #sidebar {
+        min-height: auto !important;
+    }
+
+    #main-panel {
+        padding: 15px !important;
+    }
+
+    #brand {
+        font-size: 26px !important;
+    }
+
+    #chatbot {
+        min-height: 400px !important;
+    }
+}
